@@ -28,138 +28,141 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblPiso = new System.Windows.Forms.Label();
+            this.lblTeto = new System.Windows.Forms.Label();
+            this.txtValorPiso = new System.Windows.Forms.TextBox();
+            this.txtValorTeto = new System.Windows.Forms.TextBox();
+            this.dgvParametros = new System.Windows.Forms.DataGridView();
+            this.lblCodigoPapel = new System.Windows.Forms.Label();
+            this.cbxCodigoPapel = new System.Windows.Forms.ComboBox();
+            this.btnAdicionaParametro = new System.Windows.Forms.Button();
+            this.picBoxLampada = new System.Windows.Forms.PictureBox();
+            this.lstBoxLogEvento = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvParametros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxLampada)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblPiso
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 68);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PISO";
+            this.lblPiso.AutoSize = true;
+            this.lblPiso.Location = new System.Drawing.Point(52, 34);
+            this.lblPiso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPiso.Name = "lblPiso";
+            this.lblPiso.Size = new System.Drawing.Size(32, 13);
+            this.lblPiso.TabIndex = 0;
+            this.lblPiso.Text = "PISO";
             // 
-            // label2
+            // lblTeto
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 99);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "TETO";
+            this.lblTeto.AutoSize = true;
+            this.lblTeto.Location = new System.Drawing.Point(48, 58);
+            this.lblTeto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTeto.Name = "lblTeto";
+            this.lblTeto.Size = new System.Drawing.Size(36, 13);
+            this.lblTeto.TabIndex = 1;
+            this.lblTeto.Text = "TETO";
             // 
-            // textBox1
+            // txtValorPiso
             // 
-            this.textBox1.Location = new System.Drawing.Point(87, 68);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(68, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtValorPiso.Location = new System.Drawing.Point(88, 31);
+            this.txtValorPiso.Margin = new System.Windows.Forms.Padding(2);
+            this.txtValorPiso.Name = "txtValorPiso";
+            this.txtValorPiso.Size = new System.Drawing.Size(68, 20);
+            this.txtValorPiso.TabIndex = 2;
             // 
-            // textBox2
+            // txtValorTeto
             // 
-            this.textBox2.Location = new System.Drawing.Point(87, 99);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(68, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtValorTeto.Location = new System.Drawing.Point(88, 55);
+            this.txtValorTeto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtValorTeto.Name = "txtValorTeto";
+            this.txtValorTeto.Size = new System.Drawing.Size(68, 20);
+            this.txtValorTeto.TabIndex = 3;
             // 
-            // dataGridView1
+            // dgvParametros
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(275, 25);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(511, 152);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvParametros.AllowUserToAddRows = false;
+            this.dgvParametros.AllowUserToDeleteRows = false;
+            this.dgvParametros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvParametros.Location = new System.Drawing.Point(234, 6);
+            this.dgvParametros.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvParametros.Name = "dgvParametros";
+            this.dgvParametros.ReadOnly = true;
+            this.dgvParametros.RowHeadersWidth = 62;
+            this.dgvParametros.RowTemplate.Height = 28;
+            this.dgvParametros.Size = new System.Drawing.Size(421, 223);
+            this.dgvParametros.TabIndex = 4;
             // 
-            // pictureBox1
+            // lblCodigoPapel
             // 
-            this.pictureBox1.Image = global::tcc_entrega.Properties.Resources.lampada;
-            this.pictureBox1.Location = new System.Drawing.Point(41, 162);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(216, 238);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            this.lblCodigoPapel.AutoSize = true;
+            this.lblCodigoPapel.Location = new System.Drawing.Point(11, 9);
+            this.lblCodigoPapel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCodigoPapel.Name = "lblCodigoPapel";
+            this.lblCodigoPapel.Size = new System.Drawing.Size(73, 13);
+            this.lblCodigoPapel.TabIndex = 6;
+            this.lblCodigoPapel.Text = "Código Papel:";
             // 
-            // label3
+            // cbxCodigoPapel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 35);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "label3";
+            this.cbxCodigoPapel.FormattingEnabled = true;
+            this.cbxCodigoPapel.Location = new System.Drawing.Point(88, 6);
+            this.cbxCodigoPapel.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxCodigoPapel.Name = "cbxCodigoPapel";
+            this.cbxCodigoPapel.Size = new System.Drawing.Size(68, 21);
+            this.cbxCodigoPapel.TabIndex = 7;
             // 
-            // comboBox1
+            // btnAdicionaParametro
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(87, 33);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(161, 21);
-            this.comboBox1.TabIndex = 7;
+            this.btnAdicionaParametro.Location = new System.Drawing.Point(160, 6);
+            this.btnAdicionaParametro.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdicionaParametro.Name = "btnAdicionaParametro";
+            this.btnAdicionaParametro.Size = new System.Drawing.Size(70, 69);
+            this.btnAdicionaParametro.TabIndex = 8;
+            this.btnAdicionaParametro.Text = "Adiciona Registro";
+            this.btnAdicionaParametro.UseVisualStyleBackColor = true;
+            this.btnAdicionaParametro.Click += new System.EventHandler(this.btnAdicionaParametro_Click);
             // 
-            // button1
+            // picBoxLampada
             // 
-            this.button1.Location = new System.Drawing.Point(285, 192);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 19);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.picBoxLampada.Image = global::tcc_entrega.Properties.Resources.lampada;
+            this.picBoxLampada.Location = new System.Drawing.Point(37, 79);
+            this.picBoxLampada.Margin = new System.Windows.Forms.Padding(2);
+            this.picBoxLampada.Name = "picBoxLampada";
+            this.picBoxLampada.Size = new System.Drawing.Size(150, 150);
+            this.picBoxLampada.TabIndex = 5;
+            this.picBoxLampada.TabStop = false;
+            this.picBoxLampada.Visible = false;
             // 
-            // label4
+            // lstBoxLogEvento
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 411);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "label4";
+            this.lstBoxLogEvento.FormattingEnabled = true;
+            this.lstBoxLogEvento.Location = new System.Drawing.Point(660, 6);
+            this.lstBoxLogEvento.Name = "lstBoxLogEvento";
+            this.lstBoxLogEvento.Size = new System.Drawing.Size(373, 225);
+            this.lstBoxLogEvento.TabIndex = 9;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 479);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1045, 238);
+            this.Controls.Add(this.lstBoxLogEvento);
+            this.Controls.Add(this.btnAdicionaParametro);
+            this.Controls.Add(this.cbxCodigoPapel);
+            this.Controls.Add(this.lblCodigoPapel);
+            this.Controls.Add(this.picBoxLampada);
+            this.Controls.Add(this.dgvParametros);
+            this.Controls.Add(this.txtValorTeto);
+            this.Controls.Add(this.txtValorPiso);
+            this.Controls.Add(this.lblTeto);
+            this.Controls.Add(this.lblPiso);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Principal";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Principal_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = "Principal";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvParametros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxLampada)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,16 +170,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblPiso;
+        private System.Windows.Forms.Label lblTeto;
+        private System.Windows.Forms.TextBox txtValorPiso;
+        private System.Windows.Forms.TextBox txtValorTeto;
+        private System.Windows.Forms.DataGridView dgvParametros;
+        private System.Windows.Forms.PictureBox picBoxLampada;
+        private System.Windows.Forms.Label lblCodigoPapel;
+        private System.Windows.Forms.ComboBox cbxCodigoPapel;
+        private System.Windows.Forms.Button btnAdicionaParametro;
+        private System.Windows.Forms.ListBox lstBoxLogEvento;
     }
 }
 
