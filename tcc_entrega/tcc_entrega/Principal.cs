@@ -41,12 +41,14 @@ namespace tcc_entrega
                 {
                     List<GridLine> linhasGridParaAnalisar = new List<GridLine>();
                     List<string> siglas = linhasGridView.Select(s => s.Sigla).Distinct().ToList();
+
                     foreach (var sigla in siglas)
                         linhasGridParaAnalisar.Add(linhasGridView.LastOrDefault(l => l.Sigla.Equals(sigla)));
+
                     foreach (var gridRaw in linhasGridParaAnalisar)
                     {
-                        //string URL = $"http://bvmf.bmfbovespa.com.br/cotacoes2000/FormConsultaCotacoes.asp?strListaCodigos={gridRaw.Sigla.ToUpper()}";
-                        string URL = $"http://bvmf.bmfbovespa.com.br/cotacoes2000/FormConsultaCotacoes.asp?strListaCodigos=PETR4";
+                        string URL = $"http://bvmf.bmfbovespa.com.br/cotacoes2000/FormConsultaCotacoes.asp?strListaCodigos={gridRaw.Sigla.ToUpper()}";
+                        //string URL = $"http://bvmf.bmfbovespa.com.br/cotacoes2000/FormConsultaCotacoes.asp?strListaCodigos=PETR4";
                         //string URL = $"http://bvmf.bmfbovespa.com.br/cotacoes2000/FormConsultaCotacoes.asp?strListaCodigos=PETR4|VALE5";
                         client.DefaultRequestHeaders.Clear();
                         client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
