@@ -1,1 +1,1 @@
-# Tcc para ser entregue
+# Este trabalho tem como objetivo desenvolver um sistema que traz os resultados atualizados de empresas de capital aberto na bolsa de valores, apoiando a escolha de compra e venda de ações, baseado num teto e um piso pré configurado pelo usuário na tela do sistema fazendo com que, quando as empresas atingirem um ponto mínimo ou o máximo pré estabelecido, receba um alerta propondo a hora de comprar ou vender uma ação.
